@@ -1,7 +1,7 @@
 Minnesota COVID Report
 ================
 
-Report last run: 2023-03-03 21:41:34
+Report last run: 2023-03-03 21:46:17
 
 ## Introduction
 
@@ -101,29 +101,26 @@ rate_data %>%
   select(county, state, pop, rate_last) %>%
   rename(covid_rate = rate_last) %>%
   mutate(covid_rate = round(covid_rate)) %>%
-  slice(1:20) %>%
+  slice(1:17) %>%
   knitr::kable()
 ```
 
-| county        | state          |    pop | covid_rate |
-|:--------------|:---------------|-------:|-----------:|
-| Loving        | Texas          |    169 |       2367 |
-| Washington    | Mississippi    |  43909 |       1043 |
-| Clark         | Kansas         |   1994 |        802 |
-| Rolette       | North Dakota   |  14176 |        705 |
-| Menominee     | Wisconsin      |   4556 |        658 |
-| Neshoba       | Mississippi    |  29118 |        611 |
-| Rawlins       | Kansas         |   2530 |        593 |
-| Humphreys     | Mississippi    |   8064 |        570 |
-| Traverse      | Minnesota      |   3259 |        552 |
-| Dorchester    | South Carolina | 162809 |        527 |
-| Keweenaw      | Michigan       |   2116 |        520 |
-| Lawrence      | Mississippi    |  12586 |        509 |
-| Madison       | Mississippi    | 106272 |        472 |
-| Walthall      | Mississippi    |  14286 |        469 |
-| Franklin      | Mississippi    |   7713 |        454 |
-| Concho        | Texas          |   2726 |        440 |
-| Warren        | Mississippi    |  45381 |        427 |
-| Marion        | Mississippi    |  24573 |        427 |
-| Oglala Lakota | South Dakota   |  14177 |        423 |
-| Webster       | Mississippi    |   9689 |        413 |
+| county     | state          |    pop | covid_rate |
+|:-----------|:---------------|-------:|-----------:|
+| Loving     | Texas          |    169 |       2367 |
+| Washington | Mississippi    |  43909 |       1043 |
+| Clark      | Kansas         |   1994 |        802 |
+| Rolette    | North Dakota   |  14176 |        705 |
+| Menominee  | Wisconsin      |   4556 |        658 |
+| Neshoba    | Mississippi    |  29118 |        611 |
+| Rawlins    | Kansas         |   2530 |        593 |
+| Humphreys  | Mississippi    |   8064 |        570 |
+| Traverse   | Minnesota      |   3259 |        552 |
+| Dorchester | South Carolina | 162809 |        527 |
+| Keweenaw   | Michigan       |   2116 |        520 |
+| Lawrence   | Mississippi    |  12586 |        509 |
+| Madison    | Mississippi    | 106272 |        472 |
+| Walthall   | Mississippi    |  14286 |        469 |
+| Franklin   | Mississippi    |   7713 |        454 |
+| Concho     | Texas          |   2726 |        440 |
+| Warren     | Mississippi    |  45381 |        427 |
