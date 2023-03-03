@@ -103,6 +103,6 @@ rate_data %>%
   select(county, state, pop, rate_last) %>%
   rename(covid_rate = rate_last) %>%
   mutate(covid_rate = round(covid_rate)) %>%
-  slice(1:20) %>%
+  slice(1:17) %>%
   knitr::kable()
 ```
